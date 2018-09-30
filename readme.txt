@@ -3,3 +3,7 @@ On running the executable file, the program displays the welcome message and a p
 On typing help, the user can see all the available commands along with the explaination of each command.
 The allocate command allocates the memory and prints the address of the starting location. 
 
+**New Changes**
+Added the structure in main file
+The executable name is now prog
+
