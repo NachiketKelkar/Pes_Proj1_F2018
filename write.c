@@ -1,7 +1,9 @@
 #include<stdio.h>
+#include<allocate.h>
 
 int write()
 {
-   printf("Inside write function\n");
-   return 0;
+
+printf("Enter the content you want to write\n");
+return 0;
 }
