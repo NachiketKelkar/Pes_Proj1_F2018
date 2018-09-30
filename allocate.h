@@ -1,2 +1,5 @@
+#include<stdint.h>
+
 int allocate();
-int32_t *mem;
+uint32_t *mem,*memlast;
+uint32_t size;
