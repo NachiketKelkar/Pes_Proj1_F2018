@@ -39,7 +39,7 @@ printf("\nyou have written%x", *i);
 }
 
 
-printf("Value store: %x", *address);
+//printf("Value store: %x", *address);
 
 return 0;
 }

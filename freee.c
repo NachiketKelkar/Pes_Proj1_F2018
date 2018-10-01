@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<stdint.h>
 #include<stdlib.h>
+#include "allocate.h"
+#include "freee.h"
 
-extern int32_t *mem;
 
 int freee()
 {

@@ -13,6 +13,6 @@ write.o: write.c
 disp.o: disp.c
 	gcc -c disp.c
 freee.o: freee.c
-	gcc-c freee.c
+	gcc -c freee.c
 clear: 
 	rm *.o
