@@ -8,14 +8,16 @@ int allocate()
 {
    if(!mem)
    {
-      printf("State the number of 32-bits block of memory to be allocated:-\t");
-      scanf("%d",&size);
+      printf("\nState the number of 32-bits block of memory to be allocated:-\t");
+      scanf("\n%d",&size);
       mem = (uint32_t *) malloc(size*4);
       memlast=(uint32_t *)malloc(sizeof(uint32_t *));
       memlast=mem+(size-1);
-      printf("The starting address of allocated block is %p\n\n",mem);
-      printf("\nThe size of the memory address is %ld",sizeof(mem));
-      printf("\nThe starting address of the last block is %p \n",memlast);
+      printf("\n****MEMORY ALLOCATED****");
+      //printf("\nThe starting address of the first allocated 32-bit block is %p\n",mem);
+      //printf("\nThe size of the memory address is %ld",sizeof(mem));
+      //printf("\nThe starting address of the last allocated 32-bit block is %p \n",memlast);
+      printf("\nEnter the function you would like to perform or type help to see the menu\n");
    }
    else
    {
