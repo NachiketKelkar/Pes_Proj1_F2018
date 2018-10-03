@@ -1,0 +1,12 @@
+allocate
+2
+write
+2
+0
+0xfffffff0
+disp
+2
+0
+2
+freee
+ext

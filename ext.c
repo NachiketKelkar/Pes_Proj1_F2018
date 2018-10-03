@@ -1,6 +1,7 @@
-#include<stdio.h>
-
+#include <stdio.h>
+#include "ext.h"
 int ext()
 {
-   return 0;
+printf("\nBYEEE!!\n");
+return 0;
 }
