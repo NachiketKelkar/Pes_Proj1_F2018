@@ -10,7 +10,7 @@ On typing help, the user can see all the available commands along with the expla
 The user can enter following commands
 1)allocate
 2)freee
-3)xisp
+3)disp
 4)Write
 5)invert
 6)write_Pattern
