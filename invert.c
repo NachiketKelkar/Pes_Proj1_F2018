@@ -1,7 +1,7 @@
 
 /*
 *********************************************************************************
-FILENMAE	:invert.c
+FILENAME	:invert.c
 DESCRIPTION	:Function to invert all memory bits in specified area of memory
 AUTHOR NAME	:Puneet Bansal & Nachiket Kelkar
 TOOLS USED	:GCC, GNU MAKE		
@@ -72,7 +72,7 @@ int invert()
          clock_t first= clock();				//Store the value of clock() in the variable first 
 	 *count=*count^number;
 	 clock_t second=clock();				//Store the value of clock() in the variable second
-	 printf("\nThe complemented value at address %p is %x\nTime taken to perform invert =%f seconds", count,*count,(double)(second-first)); // The time taken to perform invert= second-first
+	 printf("\nThe complemented value at address %p is %x\nTime taken to perform invert =%f seconds", count,*count,(double)(second-first)*1000/CLOCKS_PER_SEC); // The time taken to perform invert= second-first
 	 count++;
       }
    printf("\nType the function you would like to perform or type help to see the menu\n>>");	

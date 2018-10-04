@@ -2,7 +2,8 @@
 /*
 ****************************************************************************************************************************************************************************
 FILENMAE	:disp.c
-DESCRIPTION	:Function to display the contents of memory in unsigned 32-bit hexadecimal format.The user may specify an address and the number of 32bit words to display
+DESCRIPTION	:Function to display the contents of memory in unsigned 32-bit hexadecimal format.The user may specify an address and
+                 the  number of 32bit words to display
 AUTHOR NAME	:Puneet Bansal & Nachiket Kelkar
 TOOLS USED	:GCC, GNU MAKE			
 ****************************************************************************************************************************************************************************

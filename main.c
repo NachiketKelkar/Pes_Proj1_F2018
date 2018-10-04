@@ -18,19 +18,20 @@ TOOLS USED	:GCC, GNU MAKE
 #include "invert.h"
 #include "ext.h"
 #include "write_pattern.h"
+#include "verify_pattern.h"
 
 typedef struct { char *ip; int (*funcp)();}lookup; //A structure to implement look up table
 
 int main()
 {
    int i=0;
-   lookup table[]={{"help",&help},{"allocate",&allocate},{"write",&write},{"disp",&disp},{"freee",&freee},{"invert",&invert},{"ext",&ext},{"write_pattern",&write_pattern}};
+   lookup table[]={{"help",&help},{"allocate",&allocate},{"write",&write},{"disp",&disp},{"freee",&freee},{"invert",&invert},{"ext",&ext},{"write_pattern",&write_pattern},{"verify_pattern",&verify_pattern}};
    char input[15];
    printf("Welcome to the command line \nType Help to see the commands\n>>");
    do
    {
       scanf("%s",input);
-      for(i=0;i<7;i++)
+      for(i=0;i<9;i++)
       {
          if(strcmp(input,table[i].ip)==0)	//Check whether the input entered by the user is present in the look up table
          {
