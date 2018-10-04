@@ -1,11 +1,12 @@
 
 /*
-*********************************************************************************
+********************************************************************************************************************************
 FILENAME	:invert.c
 DESCRIPTION	:Function to invert all memory bits in specified area of memory
 AUTHOR NAME	:Puneet Bansal & Nachiket Kelkar
-TOOLS USED	:GCC, GNU MAKE		
-*********************************************************************************
+TOOLS USED	:GCC, GNU MAKE	
+REFERENCES	:The logic for clock refered from https://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-program-in-c/	
+*********************************************************************************************************************************
 */
 
 
@@ -17,6 +18,7 @@ TOOLS USED	:GCC, GNU MAKE
 
 int invert()
 {
+   clock_t first= clock();		        //Store the value of clock() in the variable first
    int scan, offset=0;
    uint32_t number=0xffffffff;
    int k=1;int l;
@@ -71,12 +73,9 @@ int invert()
    {
       for(l=0;l<noofblocks;l++)
       {
-         clock_t first= clock();		//Store the value of clock() in the variable first 
+          
 	 *count=*count^number;
-	 clock_t second=clock();		//Store the value of clock() in the variable second
-// The time taken to perform function
-         printf("\nThe complemented value at address %p is %x\
-                 \nTime taken to perform invert =%f seconds", count,*count,(double)(second-first)*1000/CLOCKS_PER_SEC); 
+	 printf("\nThe complemented value at address %p is %x\n",count,*count); 
 	 count++;
       }
    printf("\nType the function you would like to perform or type help to see the menu\n>>");	
@@ -86,5 +85,7 @@ int invert()
    printf("The number of blocks entered is invalid\
 	  \nType disp to try again or help to see the menu\n>>");}
    }
+   clock_t second=clock();		//Store the value of clock() in the variable second
+   printf("\nTime taken to perform the entire invert function is=%f seconds",(double)(second-first)/CLOCKS_PER_SEC);
    return 0;
 }
