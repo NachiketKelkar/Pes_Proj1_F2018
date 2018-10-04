@@ -20,7 +20,7 @@ int disp()
    int k=1;int l;
    if(mem==NULL)
    {
-      printf("There is no memory allocated");	 //To check whether memory has been allocated or not            
+      printf("There is no memory allocated\n>>");	 //To check whether memory has been allocated or not            
    }
    else
    {
@@ -62,7 +62,7 @@ int disp()
       }
       if(k==(size+1))			//Condition to check whether entered address is valid or not
       {
-         printf("\nMemeory entered is not valid\nType disp to try again or help to see the menu\n>>");
+         printf("\nMemory entered is not valid\nType disp to try again or help to see the menu\n>>");
       }
       else if(no_of_blocks<=(size-(k-1)))	//Condition to check whether the entered block size is valid or not
       {
