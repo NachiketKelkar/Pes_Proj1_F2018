@@ -1,3 +1,12 @@
+/*
+*********************************************************
+FILENAME	:freee.c
+DESCRIPTION	:Fuction to free the memory
+AUTHOR NAME	:Nachiket Kelkar & Puneet Bansal
+TOOLS USED	:GCC, GNU MAKE			
+*********************************************************
+*/
+
 #include<stdio.h>
 #include<stdint.h>
 #include<stdlib.h>

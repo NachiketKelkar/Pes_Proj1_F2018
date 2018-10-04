@@ -1,6 +1,6 @@
 /*
 ***************************************************************************************************************************
-FILENMAE	:disp.h
+FILENAME	:disp.h
 DESCRIPTION	:File for disp.c
 AUTHOR NAME	:Nachiket Kelkar & Puneet Bansal
 TOOLS USED	:GCC, GNU MAKE			

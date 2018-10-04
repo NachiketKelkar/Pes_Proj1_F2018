@@ -1,3 +1,12 @@
+/*
+*********************************************************************************
+FILENAME	:invert.h
+DESCRIPTION	:invert function declaration and global variables
+AUTHOR NAME	:Puneet Bansal & Nachiket Kelkar
+TOOLS USED	:GCC, GNU MAKE		
+*********************************************************************************
+*/
+
 #include<stdint.h>
 #include<stdlib.h>
 int invert();

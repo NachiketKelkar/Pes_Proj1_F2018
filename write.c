@@ -1,7 +1,7 @@
 
 /*
 ****************************************************************************************************
-FILENMAE	:write.c
+FILENAME	:write.c
 DESCRIPTION	:Function to write the 32-bit contents specified by user at specific memory address
 AUTHOR NAME	:Puneet Bansal & Nachiket Kelkar
 TOOLS USED	:GCC , GNU MAKE	
@@ -29,14 +29,16 @@ int write()
       allocate();
    }
 
-   printf("\nThe available addresses on which you can write are\n"); //Prints the list of available addressess on which the user can write the data
-
+//Prints the list of available addressess on which the user can write the data
+   printf("\nThe available addresses on which you can write are\n"); 
    for(i=mem;i<=memlast;i++)
    {
       printf("\n%p",i);	
    }
 
-   printf("\n\nDo you wish to:\n(1)Type the address on which you want to write\n(2)Give an offset from %p\n>>",mem); //Determine whether user wants to input address or offset
+   printf("\n\nDo you wish to:\
+           \n(1)Type the address on which you want to write\
+           \n(2)Give an offset from %p\n>>",mem); //Determine whether user wants to input address or offset
    scanf("%d",&scan);
    switch(scan)
    {
@@ -48,7 +50,7 @@ int write()
       case 2:
       printf("\nEnter the offset from %p\n>>",mem);
       scanf("%d",&offset);
-      address=mem+offset;			//Calculating the starting address of the memory that user wants to display using offset
+      address=mem+offset;			//Calculate the start address for write
       break;
 	
       default:
@@ -56,7 +58,8 @@ int write()
       break;
    }
 
-   for(i=mem;i<=memlast;i++)			//Loop starts from the starting address of the first block of allocated memory to the starting add of the last block of allocated memory
+   for(i=mem;i<=memlast;i++)			//Loop starts from the starting address of the first block\
+						 of allocated memory to the starting add of the last block of allocated memory
    {
       if(i==address)				//If i is equal to the address entered by the user, break from the loop
       {

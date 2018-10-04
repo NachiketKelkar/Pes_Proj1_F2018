@@ -1,7 +1,6 @@
-
 /*
 ******************************************************************
-FILENMAE	:main.c
+FILENAME	:main.c
 DESCRIPTION	:Contains the main body of the program
 AUTHOR NAME	:Puneet Bansal & Nachiket Kelkar
 TOOLS USED	:GCC, GNU MAKE		
@@ -11,21 +10,16 @@ TOOLS USED	:GCC, GNU MAKE
 #include <stdio.h>
 #include <string.h>
 #include "help.h"
-#include "allocate.h"
-#include "write.h"
-#include "disp.h"
-#include "freee.h"
-#include "invert.h"
-#include "ext.h"
-#include "write_pattern.h"
-#include "verify_pattern.h"
+#include "main.h"
 
 typedef struct { char *ip; int (*funcp)();}lookup; //A structure to implement look up table
 
 int main()
 {
    int i=0;
-   lookup table[]={{"help",&help},{"allocate",&allocate},{"write",&write},{"disp",&disp},{"freee",&freee},{"invert",&invert},{"ext",&ext},{"write_pattern",&write_pattern},{"verify_pattern",&verify_pattern}};
+   lookup table[]={{"help",&help},{"allocate",&allocate},{"write",&write},{"disp",&disp},\
+                   {"freee",&freee},{"invert",&invert},{"ext",&ext},{"write_pattern",&write_pattern},\
+                   {"verify_pattern",&verify_pattern}};
    char input[15];
    printf("Welcome to the command line \nType Help to see the commands\n>>");
    do
@@ -33,14 +27,14 @@ int main()
       scanf("%s",input);
       for(i=0;i<9;i++)
       {
-         if(strcmp(input,table[i].ip)==0)	//Check whether the input entered by the user is present in the look up table
+         if(strcmp(input,table[i].ip)==0)	//Check if user entered input is present in the look up table
          {
             (*table[i].funcp)();		//Call the function that user wants to perform
          }
       }
 
    }
-   while(strcmp(input,"ext")!=0);		//Run the program til the time user enters ext
+   while(strcmp(input,"ext")!=0);		//Run the program till the time user enters ext
    return 0;
 }
 
