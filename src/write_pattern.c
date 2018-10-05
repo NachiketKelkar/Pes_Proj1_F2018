@@ -11,11 +11,11 @@ TOOLS USED	:GCC, GNU MAKE
 
 #include <stdio.h>
 #include <stdint.h>
-#include "write.h"
-#include "Pattern_gen.h"
-#include "write_pattern.h"
-#include "allocate.h"
-#include "disp.h"
+#include "../inc/write.h"
+#include "../inc/Pattern_gen.h"
+#include "../inc/write_pattern.h"
+#include "../inc/allocate.h"
+#include "../inc/disp.h"
 #include <time.h>
 
 int write_pattern()

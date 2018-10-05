@@ -10,8 +10,8 @@ TOOLS USED	:GCC, GNU MAKE
 #include<stdio.h>
 #include<stdint.h>
 #include<stdlib.h>
-#include "allocate.h"
-#include "freee.h"
+#include "../inc/allocate.h"
+#include "../inc/freee.h"
 
 
 int freee()

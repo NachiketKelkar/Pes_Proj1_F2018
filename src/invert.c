@@ -11,9 +11,9 @@ REFERENCES	:The logic for clock refered from https://www.geeksforgeeks.org/how-t
 
 
 #include <stdio.h>
-#include "invert.h"
-#include "allocate.h"
-#include "write.h"
+#include "../inc/invert.h"
+#include "../inc/allocate.h"
+#include "../inc/write.h"
 #include <time.h>
 
 int invert()

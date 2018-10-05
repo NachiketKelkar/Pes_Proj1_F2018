@@ -12,7 +12,7 @@ TOOLS USED	:GCC, GNU MAKE
 #include<math.h>
 #include<stdlib.h>
 #include<string.h>
-#include"Pattern_gen.h"
+#include"../inc/Pattern_gen.h"
 
 long Pattern_gen(int seed_value, uint32_t *addr)
 {

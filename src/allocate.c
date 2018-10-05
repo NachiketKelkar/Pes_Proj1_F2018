@@ -10,7 +10,7 @@ TOOLS USED	:GCC, GNU MAKE
 #include<stdio.h>
 #include<stdint.h>
 #include<stdlib.h>
-#include "allocate.h"
+#include "../inc/allocate.h"
 
 
 int allocate()

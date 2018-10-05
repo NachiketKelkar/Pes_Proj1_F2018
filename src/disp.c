@@ -10,9 +10,9 @@ TOOLS USED	:GCC, GNU MAKE
 */
 
 #include <stdio.h>
-#include "disp.h"
-#include "allocate.h"
-#include "write.h"
+#include "../inc/disp.h"
+#include "../inc/allocate.h"
+#include "../inc/write.h"
 
 int disp()
 {

@@ -10,8 +10,8 @@ TOOLS USED	:GCC , GNU MAKE
 
 
 #include<stdio.h>
-#include "allocate.h"
-#include "write.h"
+#include "../inc/allocate.h"
+#include "../inc/write.h"
 #include <stdlib.h>
 
 int write()

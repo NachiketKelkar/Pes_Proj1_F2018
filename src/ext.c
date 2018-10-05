@@ -8,7 +8,7 @@ TOOLS USED	:GCC, GNU MAKE
 */
 
 #include <stdio.h>
-#include "ext.h"
+#include "../inc/ext.h"
 int ext()
 {
 printf("\nBYEEE!!\n");

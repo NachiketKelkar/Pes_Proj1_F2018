@@ -9,8 +9,8 @@ TOOLS USED	:GCC, GNU MAKE
 
 #include <stdio.h>
 #include <string.h>
-#include "help.h"
-#include "main.h"
+#include "../inc/help.h"
+#include "../inc/main.h"
 
 typedef struct { char *ip; int (*funcp)();}lookup; //A structure to implement look up table
 
